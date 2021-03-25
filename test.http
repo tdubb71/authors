@@ -1,0 +1,33 @@
+
+//Test Index Route
+GET http://localhost:8000/api/authors HTTP/1.1
+
+###
+
+//Test Create Route
+POST http://localhost:8000/api/authors HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Herman Melville"
+}
+
+###
+
+//Test Show Route
+GET http://localhost:8000/api/authors/605bf0c436f6915fb0ff6d89 HTTP/1.1
+
+###
+
+//Test Update Route
+PUT http://localhost:8000/api/authors/605bf0c436f6915fb0ff6d89  HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Jules Verne"
+}
+
+###
+
+///Test Delete Route
+DELETE http://localhost:8000/api/authors/605bf0c436f6915fb0ff6d89 HTTP/1.1
